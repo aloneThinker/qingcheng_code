@@ -19,6 +19,7 @@ public class BrandController {
     //品牌展示
     @RequestMapping("/findAll")
     public List<Brand> findAll() {
+       // System.out.println("");
         return brandService.findAll();
     }
 
