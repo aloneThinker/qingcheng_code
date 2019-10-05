@@ -29,6 +29,7 @@ public class BrandServiceImpl implements BrandService {
     public PageResult<Brand> findPage(int pag, int size) {
         PageHelper.startPage(pag, size);
         Page<Brand> brands = (Page<Brand>) brandMapper.selectAll();
+        System.out.println("测试git");
         return new PageResult<>(brands.getTotal(), brands.getResult());//brands.getResult()=rows分页所有的信息
     }
 
